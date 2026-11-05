@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.VougeCycle" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/vc_green</item>
+        <item name="colorPrimaryDark">@color/vc_green_dark</item>
+        <item name="colorAccent">@color/vc_gold</item>
+        <item name="android:statusBarColor">@color/vc_green</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:navigationBarColor">@color/vc_off_white</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden|adjustResize</item>
+    </style>
+    <style name="TrackingStep">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:textColor">@color/vc_grey_text</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="CategoryTile">
+        <item name="android:gravity">center</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+</resources>

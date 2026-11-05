@@ -1,0 +1,30 @@
+category,asset_file,image_url_value,uploaded_filename
+men,01_image00018.jpeg,asset://catalog/men/01_image00018.jpeg,image00018.jpeg
+men,02_image00016.jpeg,asset://catalog/men/02_image00016.jpeg,image00016.jpeg
+men,03_image00001.jpeg,asset://catalog/men/03_image00001.jpeg,image00001.jpeg
+men,04_image00011.jpeg,asset://catalog/men/04_image00011.jpeg,image00011.jpeg
+men,05_image00023.jpeg,asset://catalog/men/05_image00023.jpeg,image00023.jpeg
+men,06_image00025.jpeg,asset://catalog/men/06_image00025.jpeg,image00025.jpeg
+women,01_image00002.jpeg,asset://catalog/women/01_image00002.jpeg,image00002.jpeg
+women,02_image00012.jpeg,asset://catalog/women/02_image00012.jpeg,image00012.jpeg
+women,03_image00009.jpeg,asset://catalog/women/03_image00009.jpeg,image00009.jpeg
+women,04_image00007.jpeg,asset://catalog/women/04_image00007.jpeg,image00007.jpeg
+women,05_image00008.jpeg,asset://catalog/women/05_image00008.jpeg,image00008.jpeg
+vintage,01_image00014.jpeg,asset://catalog/vintage/01_image00014.jpeg,image00014.jpeg
+vintage,02_image00003.jpeg,asset://catalog/vintage/02_image00003.jpeg,image00003.jpeg
+vintage,03_image000251.jpeg,asset://catalog/vintage/03_image000251.jpeg,image00025(1).jpeg
+vintage,04_image00013.jpeg,asset://catalog/vintage/04_image00013.jpeg,image00013.jpeg
+vintage,05_image00004.jpeg,asset://catalog/vintage/05_image00004.jpeg,image00004.jpeg
+eras,01_image000121.jpeg,asset://catalog/eras/01_image000121.jpeg,image00012(1).jpeg
+eras,02_image000231.jpeg,asset://catalog/eras/02_image000231.jpeg,image00023(1).jpeg
+eras,03_salomon_x_mm6.jpeg,asset://catalog/eras/03_salomon_x_mm6.jpeg,salomon x mm6.jpeg
+eras,04_image000131.jpeg,asset://catalog/eras/04_image000131.jpeg,image00013(1).jpeg
+sports,01_supreme_track_jacket.jpeg,asset://catalog/sports/01_supreme_track_jacket.jpeg,supreme track jacket.jpeg
+sports,02_nike_sport_shorts.jpeg,asset://catalog/sports/02_nike_sport_shorts.jpeg,nike sport shorts.jpeg
+sports,03_vintage_adidas_track_shorts.jpeg,asset://catalog/sports/03_vintage_adidas_track_shorts.jpeg,Vintage Adidas Track Shorts.jpeg
+sports,04_unisex_adidas_sporting_shorts.jpeg,asset://catalog/sports/04_unisex_adidas_sporting_shorts.jpeg,Unisex adidas sporting shorts.jpeg
+sports,05_salomon_x_mm61.jpeg,asset://catalog/sports/05_salomon_x_mm61.jpeg,salomon x mm6(1).jpeg
+all,01_simple_jeans.jpg,asset://catalog/all/01_simple_jeans.jpg,128930.jpg
+all,02_simple_t_shirt.jpg,asset://catalog/all/02_simple_t_shirt.jpg,128931.jpg
+all,03_test_jacket.jpg,asset://catalog/all/03_test_jacket.jpg,128933.jpg
+all,04_cdg_colour_splash_shirt.jpg,asset://catalog/all/04_cdg_colour_splash_shirt.jpg,128935.jpg

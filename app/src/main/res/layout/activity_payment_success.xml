@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/vc_white" android:gravity="center" android:orientation="vertical" android:padding="28dp">
+    <TextView android:layout_width="88dp" android:layout_height="88dp" android:background="@drawable/bg_success_circle" android:gravity="center" android:text="✓" android:textColor="@color/vc_white" android:textSize="48sp" android:textStyle="bold" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="Payment successful" android:textColor="@color/vc_black" android:textSize="26sp" android:textStyle="bold" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Your demo order has been paid" android:textColor="@color/vc_grey_text" android:textSize="15sp" />
+    <TextView android:id="@+id/tvAmount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="R 0.00" android:textColor="@color/vc_green" android:textSize="28sp" android:textStyle="bold" />
+    <TextView android:id="@+id/tvMethod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Payment method" android:textColor="@color/vc_black" android:textSize="16sp" />
+    <TextView android:id="@+id/tvReference" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="VC-REFERENCE" android:textColor="@color/vc_grey_text" android:textIsSelectable="true" android:textSize="14sp" />
+    <Button android:id="@+id/btnViewOrders" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="32dp" android:background="@drawable/bg_button_primary" android:text="View my purchases" android:textAllCaps="false" android:textColor="@color/vc_white" />
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/vc_white" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+        <ImageView android:id="@+id/ivBack" android:layout_width="26dp" android:layout_height="26dp" android:contentDescription="Back" android:src="@drawable/ic_back_arrow" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="Track your order" android:textColor="@color/vc_black" android:textSize="26sp" android:textStyle="bold" />
+        <TextView android:id="@+id/tvProductTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Product" android:textColor="@color/vc_black" android:textSize="17sp" />
+        <TextView android:id="@+id/tvOrderTotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="R 0.00" android:textColor="@color/vc_green" android:textSize="20sp" android:textStyle="bold" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:background="@drawable/bg_input_field" android:orientation="vertical" android:padding="16dp">
+            <TextView android:id="@+id/tvCourier" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Courier" android:textColor="@color/vc_black" android:textSize="16sp" android:textStyle="bold" />
+            <TextView android:id="@+id/tvDeliveryMethod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Delivery method" android:textColor="@color/vc_grey_text" android:textSize="14sp" />
+            <TextView android:id="@+id/tvTracking" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Tracking number" android:textColor="@color/vc_green" android:textIsSelectable="true" android:textSize="14sp" android:textStyle="bold" />
+            <TextView android:id="@+id/tvEstimate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Estimate" android:textColor="@color/vc_grey_text" android:textSize="13sp" />
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="Delivery progress" android:textColor="@color/vc_black" android:textSize="18sp" android:textStyle="bold" />
+        <TextView android:id="@+id/tvPaid" style="@style/TrackingStep" android:text="Paid" />
+        <TextView android:id="@+id/tvPreparing" style="@style/TrackingStep" android:text="Preparing parcel" />
+        <TextView android:id="@+id/tvShipped" style="@style/TrackingStep" android:text="Shipped" />
+        <TextView android:id="@+id/tvOutForDelivery" style="@style/TrackingStep" android:text="Out for delivery" />
+        <TextView android:id="@+id/tvDelivered" style="@style/TrackingStep" android:text="Delivered" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="Delivery address" android:textColor="@color/vc_black" android:textSize="18sp" android:textStyle="bold" />
+        <TextView android:id="@+id/tvDeliveryAddress" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="24dp" android:background="@drawable/bg_input_field" android:padding="14dp" android:text="Address" android:textColor="@color/vc_grey_text" android:textSize="14sp" />
+    </LinearLayout>
+</ScrollView>

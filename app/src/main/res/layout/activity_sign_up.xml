@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vc_white"
+    android:fillViewport="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="28dp">
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:contentDescription="VougeCycle logo"
+            android:scaleType="fitCenter"
+            android:src="@drawable/vougecycle_logo"/>
+
+        <!-- Brand title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:text="Vogue Cycle"
+            android:textColor="@color/vc_green"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+
+        <!-- Taglines -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buy vintage · Sell vintage · Keep fashion in motion"
+            android:textColor="@color/vc_grey_text"
+            android:textSize="12sp"/>
+
+        <!-- Screen heading -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Sign Up"
+            android:textColor="@color/vc_black"
+            android:textSize="26sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter your details below"
+            android:textColor="@color/vc_grey_text"
+            android:textSize="13sp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Full Name -->
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_input_field"
+            android:hint="Full Name"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp"
+            android:inputType="textPersonName"
+            android:importantForAutofill="no"/>
+
+        <!-- Username -->
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_input_field"
+            android:hint="Username"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp"
+            android:inputType="text"
+            android:importantForAutofill="no"/>
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_input_field"
+            android:hint="Email address"
+            android:paddingHorizontal="16dp"
+            android:textSize="14sp"
+            android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress"/>
+
+        <!-- Password -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp">
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_input_field"
+                android:hint="Password"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:paddingStart="16dp"
+                android:paddingEnd="52dp"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/ivPasswordVisibility"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="Show password"
+                android:focusable="true"
+                android:padding="12dp"
+                android:src="@drawable/ic_visibility_off"/>
+        </FrameLayout>
+
+        <!-- Password hint -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Use at least 6 characters, one number and one capital letter"
+            android:textColor="@color/vc_grey_text"
+            android:textSize="11sp"/>
+
+        <!-- Confirm Password -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp">
+
+            <EditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_input_field"
+                android:hint="Confirm Password"
+                android:importantForAutofill="no"
+                android:inputType="textPassword"
+                android:paddingStart="16dp"
+                android:paddingEnd="52dp"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/ivConfirmPasswordVisibility"
+                android:layout_width="48dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:contentDescription="Show password"
+                android:focusable="true"
+                android:padding="12dp"
+                android:src="@drawable/ic_visibility_off"/>
+        </FrameLayout>
+
+        <!-- Sign Up button -->
+        <Button
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_button_primary"
+            android:text="Sign Up"
+            android:textColor="@color/vc_white"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:stateListAnimator="@null"/>
+
+        <Button
+            android:id="@+id/btnLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_button_language"
+            android:minWidth="168dp"
+            android:text="Language: English"
+            android:textAllCaps="false"
+            android:textColor="@color/vc_white"
+            android:textSize="14sp"
+            android:stateListAnimator="@null"/>
+
+        <!-- Log In link -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Have an account? "
+                android:textColor="@color/vc_grey_text"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Log In"
+                android:textColor="@color/vc_green"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- Permission note -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="We need permission for the service you use\nLearn More"
+            android:textColor="@color/vc_grey_text"
+            android:textSize="11sp"/>
+    </LinearLayout>
+</ScrollView>

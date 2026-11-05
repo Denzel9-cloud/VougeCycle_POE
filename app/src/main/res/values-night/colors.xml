@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="vc_green">#1F4032</color>
+    <color name="vc_green_dark">#0D1F17</color>
+    <color name="vc_green_light">#1F4032</color>
+    <color name="vc_sage">#2A251D</color>
+    <color name="vc_gold">#DFBA73</color>
+    <color name="vc_white">#0D1F17</color>
+    <color name="vc_off_white">#142C21</color>
+    <color name="vc_grey_bg">#142C21</color>
+    <color name="vc_grey_text">#D8E1DB</color>
+    <color name="vc_black">#F9F6F0</color>
+    <color name="vc_red">#EF6A66</color>
+    <color name="vc_border">#1F4032</color>
+</resources>

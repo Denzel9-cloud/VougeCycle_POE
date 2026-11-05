@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/vc_white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="24dp">
+
+        <!-- ====== TOP BAR ====== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:visibility="gone"
+                android:src="@drawable/ic_back_arrow"
+                android:contentDescription="Back"/>
+
+            <TextView
+                android:id="@+id/tvTabShop"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="My shop"
+                android:textColor="@color/vc_black"
+                android:textSize="15sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvTabOrders"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Orders"
+                android:textColor="@color/vc_grey_text"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/tvTabPurchases"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Purchases"
+                android:textColor="@color/vc_grey_text"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/tvTabFavorites"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Favorites"
+                android:textColor="@color/vc_grey_text"
+                android:textSize="13sp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/vc_border"/>
+
+        <!-- ====== AVATAR + SHOP NAME ====== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingTop="24dp">
+
+            <ImageView
+                android:id="@+id/ivAvatar"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:src="@drawable/ic_profile"
+                android:background="@color/vc_off_white"
+                android:padding="18dp"
+                android:contentDescription="Avatar"/>
+
+            <TextView
+                android:id="@+id/tvShopName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="@shop_name"
+                android:textColor="@color/vc_black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="No reviews yet"
+                android:textColor="@color/vc_grey_text"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <!-- ====== STATS ROW ====== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingHorizontal="24dp"
+            android:layout_marginTop="18dp">
+
+            <TextView
+                android:id="@+id/tvSoldCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 sold"
+                android:textColor="@color/vc_black"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="0 followers"
+                android:textColor="@color/vc_black"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="Active today"
+                android:textColor="@color/vc_green"
+                android:textSize="13sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <!-- ====== LOCATION ====== -->
+        <TextView
+            android:id="@+id/tvShopLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Gauteng, Braamfontein"
+            android:textColor="@color/vc_grey_text"
+            android:textSize="13sp"/>
+
+        <!-- ====== ACTION BUTTONS ====== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="24dp"
+            android:layout_marginTop="18dp">
+
+            <Button
+                android:id="@+id/btnAddItems"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_primary"
+                android:text="+ Add items"
+                android:textColor="@color/vc_white"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:stateListAnimator="@null"/>
+
+            <Button
+                android:id="@+id/btnSettings"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_button_outline"
+                android:text="Settings"
+                android:textColor="@color/vc_green"
+                android:textSize="14sp"
+                android:textAllCaps="false"
+                android:stateListAnimator="@null"/>
+        </LinearLayout>
+
+        <!-- ====== LINKS / DESCRIPTION ACTIONS ====== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="24dp"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/tvAddLinks"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button_white"
+                android:text="+Add links"
+                android:textAllCaps="false"
+                android:textColor="@color/vc_green"
+                android:textSize="13sp"
+                android:stateListAnimator="@null" />
+
+            <Button
+                android:id="@+id/tvAddDescription"
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_button_primary"
+                android:text="Add description"
+                android:textAllCaps="false"
+                android:textColor="@color/vc_white"
+                android:textSize="13sp"
+                android:stateListAnimator="@null" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvShopBio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="24dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/vc_grey_text"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvShopLinks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="24dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/vc_green"
+            android:textSize="13sp"
+            android:autoLink="web"
+            android:visibility="gone" />
+
+        <!-- ====== PRODUCT GRID ====== -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvShopProducts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:paddingHorizontal="14dp"
+            android:clipToPadding="false"
+            android:nestedScrollingEnabled="false"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/vc_border"/>
+
+    <include
+        android:id="@+id/bottomNav"
+        layout="@layout/bottom_nav"/>
+
+</LinearLayout>

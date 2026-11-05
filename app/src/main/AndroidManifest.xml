@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="false"
+        android:name=".VougeCycleApplication"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/vougecycle_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/vougecycle_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.VougeCycle">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".SignUpActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".SellActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ShopProfileActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+
+        <activity android:name=".BankAccountsActivity" android:exported="false" />
+
+        <activity
+            android:name=".ProductDetailActivity"
+            android:exported="false" />
+
+        <activity android:name=".FavouritesActivity" android:exported="false" />
+        <activity android:name=".MyPurchasesActivity" android:exported="false" />
+        <activity android:name=".SellerOrdersActivity" android:exported="false" />
+        <activity android:name=".OrderConfirmationActivity" android:exported="false" />
+        <activity android:name=".PaymentSuccessActivity" android:exported="false" />
+        <activity android:name=".ChatActivity" android:exported="false" />
+        <activity android:name=".OrderTrackingActivity" android:exported="false" />
+        <activity android:name=".EditProfileActivity" android:exported="false" />
+        <activity android:name=".ReviewActivity" android:exported="false" />
+        <activity android:name=".SellerReviewsActivity" android:exported="false" />
+
+        <activity
+            android:name=".ExploreActivity"
+            android:exported="false" />
+
+        <activity android:name=".InboxActivity"
+            android:exported="false"/>
+
+        <activity android:name=".NotificationsActivity" android:exported="false" />
+        <activity android:name=".ContactDetailsActivity" android:exported="false" />
+        <activity android:name=".InformationActivity" android:exported="false" />
+
+    </application>
+
+</manifest>

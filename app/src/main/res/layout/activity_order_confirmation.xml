@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vc_white"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+        <ImageView android:id="@+id/ivBack" android:layout_width="26dp" android:layout_height="26dp" android:contentDescription="Back" android:src="@drawable/ic_back_arrow" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="Checkout" android:textColor="@color/vc_black" android:textSize="26sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="South African demo payment" android:textColor="@color/vc_grey_text" android:textSize="14sp" />
+        <ImageView android:id="@+id/ivProduct" android:layout_width="match_parent" android:layout_height="210dp" android:layout_marginTop="18dp" android:background="@color/vc_grey_bg" android:contentDescription="Product" android:scaleType="centerCrop" />
+        <TextView android:id="@+id/tvTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="Product title" android:textColor="@color/vc_black" android:textSize="19sp" android:textStyle="bold" />
+        <TextView android:id="@+id/tvPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="R 0.00" android:textColor="@color/vc_green" android:textSize="22sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="Delivery details" android:textColor="@color/vc_black" android:textSize="18sp" android:textStyle="bold" />
+        <EditText android:id="@+id/etDeliveryName" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="12dp" android:background="@drawable/bg_input_field" android:hint="Recipient full name" android:inputType="textPersonName" android:paddingHorizontal="14dp" android:textColor="@color/vc_black" android:textColorHint="@color/vc_grey_text" />
+        <EditText android:id="@+id/etDeliveryPhone" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="10dp" android:background="@drawable/bg_input_field" android:hint="Phone number e.g. 0821234567" android:inputType="phone" android:paddingHorizontal="14dp" android:textColor="@color/vc_black" android:textColorHint="@color/vc_grey_text" />
+        <EditText android:id="@+id/etDeliveryAddress" android:layout_width="match_parent" android:layout_height="96dp" android:layout_marginTop="10dp" android:background="@drawable/bg_input_field" android:gravity="top|start" android:hint="Street, suburb, city and postal code" android:inputType="textPostalAddress|textMultiLine" android:padding="14dp" android:textColor="@color/vc_black" android:textColorHint="@color/vc_grey_text" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="Shipping" android:textColor="@color/vc_black" android:textSize="18sp" android:textStyle="bold" />
+        <Spinner android:id="@+id/spCourier" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="10dp" android:background="@drawable/bg_input_field" android:paddingHorizontal="12dp" />
+        <Spinner android:id="@+id/spDeliveryMethod" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="10dp" android:background="@drawable/bg_input_field" android:paddingHorizontal="12dp" />
+        <TextView android:id="@+id/tvShippingCost" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="Select courier and method" android:textColor="@color/vc_green" android:textSize="15sp" android:textStyle="bold" />
+        <TextView android:id="@+id/tvDeliveryEstimate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="Estimated delivery will appear here" android:textColor="@color/vc_grey_text" android:textSize="13sp" />
+        <TextView android:id="@+id/tvTotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="Total: R 0.00" android:textColor="@color/vc_black" android:textSize="19sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="Payment method" android:textColor="@color/vc_black" android:textSize="18sp" android:textStyle="bold" />
+        <RadioGroup android:id="@+id/rgPayment" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:orientation="vertical">
+            <RadioButton android:id="@+id/rbCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="8dp" android:text="Card (Demo)" android:textColor="@color/vc_black" />
+            <RadioButton android:id="@+id/rbEft" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="8dp" android:text="Instant EFT (Demo)" android:textColor="@color/vc_black" />
+            <RadioButton android:id="@+id/rbPayShap" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingVertical="8dp" android:text="PayShap (Demo)" android:textColor="@color/vc_black" />
+        </RadioGroup>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Pay from bank account" android:textColor="@color/vc_black" android:textSize="16sp" android:textStyle="bold" />
+        <Spinner android:id="@+id/spBankAccount" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="8dp" android:background="@drawable/bg_input_field" android:paddingHorizontal="12dp" />
+        <Button android:id="@+id/btnAddBankAccount" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="6dp" android:background="@drawable/bg_button_outline" android:text="Manage bank accounts" android:textAllCaps="false" android:textColor="@color/vc_green" />
+        <Button android:id="@+id/btnConfirm" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="22dp" android:layout_marginBottom="24dp" android:background="@drawable/bg_button_primary" android:text="Pay securely (Demo)" android:textAllCaps="false" android:textColor="@color/vc_white" />
+    </LinearLayout>
+</ScrollView>

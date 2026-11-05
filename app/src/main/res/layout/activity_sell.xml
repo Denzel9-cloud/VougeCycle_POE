@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vc_white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Heading -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Sell an item"
+            android:textColor="@color/vc_black"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <!-- Images section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Images"
+            android:textColor="@color/vc_black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Remember to use photos you've taken yourself. Images taken from the internet are not allowed on VougeCycle and violate our T&amp;Cs."
+            android:textColor="@color/vc_grey_text"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Add one product image"
+            android:textColor="@color/vc_black"
+            android:textSize="13sp"/>
+
+        <!-- Upload row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <!-- Upload button -->
+            <LinearLayout
+                android:id="@+id/llUploadPhoto"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_upload_photo"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/ic_camera"
+                    android:contentDescription="Upload"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Upload photo"
+                    android:textColor="@color/vc_white"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+            <!-- Placeholder slot 2 -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_upload_placeholder"/>
+
+            <!-- Placeholder slot 3 -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/bg_upload_placeholder"/>
+        </LinearLayout>
+
+        <!-- Preview of picked image (hidden until one is selected) -->
+        <ImageView
+            android:id="@+id/ivPreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:contentDescription="Preview"/>
+
+        <!-- Item details section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Item details"
+            android:textColor="@color/vc_black"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Title"
+            android:textColor="@color/vc_black"
+            android:textSize="13sp"/>
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_input_field"
+            android:hint="e.g. Vintage CDG Shirt"
+            android:paddingHorizontal="14dp"
+            android:textSize="14sp"
+            android:inputType="text"
+            android:importantForAutofill="no"/>
+
+        <!-- Price -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Price (R)"
+            android:textColor="@color/vc_black"
+            android:textSize="13sp"/>
+
+        <EditText
+            android:id="@+id/etPrice"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_input_field"
+            android:hint="e.g. 1700.00"
+            android:paddingHorizontal="14dp"
+            android:textSize="14sp"
+            android:inputType="numberDecimal"
+            android:importantForAutofill="no"/>
+
+        <!-- Description -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Description"
+            android:textColor="@color/vc_black"
+            android:textSize="13sp"/>
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_input_field"
+            android:gravity="top|start"
+            android:hint="Describe your item..."
+            android:padding="14dp"
+            android:textSize="14sp"
+            android:inputType="textMultiLine"
+            android:importantForAutofill="no"/>
+
+        <!-- Category -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Category"
+            android:textColor="@color/vc_black"
+            android:textSize="13sp"/>
+
+        <Spinner
+            android:id="@+id/spCategory"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_input_field"
+            android:paddingHorizontal="14dp"/>
+
+        <!-- Condition -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Condition"
+            android:textColor="@color/vc_black"
+            android:textSize="13sp"/>
+
+        <Spinner
+            android:id="@+id/spCondition"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_input_field"
+            android:paddingHorizontal="14dp"/>
+
+        <!-- Expandable additional details -->
+        <TextView
+            android:id="@+id/tvAdditional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="› Additional Details"
+            android:textColor="@color/vc_black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingVertical="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground" />
+
+        <LinearLayout
+            android:id="@+id/additionalDetailsPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/etBrand"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_input_field"
+                android:hint="Brand (optional)"
+                android:inputType="textCapWords"
+                android:paddingHorizontal="14dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/etSize"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input_field"
+                android:hint="Size (optional)"
+                android:inputType="textCapCharacters"
+                android:paddingHorizontal="14dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/etColour"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input_field"
+                android:hint="Colour (optional)"
+                android:inputType="textCapWords"
+                android:paddingHorizontal="14dp"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/etMaterial"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input_field"
+                android:hint="Material (optional)"
+                android:inputType="textCapWords"
+                android:paddingHorizontal="14dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Expandable delivery options -->
+        <TextView
+            android:id="@+id/tvDelivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="› Delivery"
+            android:textColor="@color/vc_black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:paddingVertical="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?attr/selectableItemBackground" />
+
+        <LinearLayout
+            android:id="@+id/deliveryPanel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery options buyers can choose"
+                android:textColor="@color/vc_black"
+                android:textSize="13sp" />
+
+            <Spinner
+                android:id="@+id/spSellerDelivery"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_input_field"
+                android:paddingHorizontal="14dp" />
+
+            <EditText
+                android:id="@+id/etDeliveryNotes"
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_input_field"
+                android:gravity="top|start"
+                android:hint="Delivery notes for buyers (optional)"
+                android:inputType="textCapSentences|textMultiLine"
+                android:padding="14dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Submit button -->
+        <Button
+            android:id="@+id/btnList"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_button_primary"
+            android:text="List Item"
+            android:textColor="@color/vc_white"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:stateListAnimator="@null"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/bottomNav"
+        layout="@layout/bottom_nav"/>
+</LinearLayout>

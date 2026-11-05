@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vc_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="16dp">
+        <ImageView android:id="@+id/ivBack" android:layout_width="26dp" android:layout_height="26dp" android:contentDescription="Back" android:src="@drawable/ic_back_arrow" />
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="14dp" android:layout_weight="1" android:orientation="vertical">
+            <TextView android:id="@+id/tvChatName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@seller" android:textColor="@color/vc_black" android:textSize="17sp" android:textStyle="bold" />
+            <TextView android:id="@+id/tvChatProduct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Product" android:textColor="@color/vc_grey_text" android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/vc_border" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:padding="12dp" />
+
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/vc_border" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="12dp">
+        <EditText
+            android:id="@+id/etMessage"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_input_field"
+            android:hint="Type a message"
+            android:imeOptions="actionSend"
+            android:inputType="textCapSentences|textMultiLine"
+            android:maxLength="1000"
+            android:maxLines="4"
+            android:paddingHorizontal="14dp"
+            android:textColor="@color/vc_black"
+            android:textColorHint="@color/vc_grey_text" />
+        <Button
+            android:id="@+id/btnSend"
+            android:layout_width="86dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/bg_button_primary"
+            android:text="Send"
+            android:textAllCaps="false"
+            android:textColor="@color/vc_white" />
+    </LinearLayout>
+</LinearLayout>

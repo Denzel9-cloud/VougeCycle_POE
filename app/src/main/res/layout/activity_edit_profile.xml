@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vc_white"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageView android:id="@+id/ivBack" android:layout_width="26dp" android:layout_height="26dp" android:contentDescription="Back" android:src="@drawable/ic_back_arrow" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="Edit profile" android:textColor="@color/vc_black" android:textSize="26sp" android:textStyle="bold" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Update how your shop appears to other users" android:textColor="@color/vc_grey_text" android:textSize="14sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivAvatar"
+            android:layout_width="112dp"
+            android:layout_height="112dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:contentDescription="Profile photo"
+            android:src="@drawable/ic_profile" />
+
+        <Button
+            android:id="@+id/btnChangePhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_button_outline"
+            android:text="Change photo"
+            android:textAllCaps="false"
+            android:textColor="@color/vc_green" />
+
+        <ProgressBar android:id="@+id/progressProfile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_marginTop="10dp" android:visibility="gone" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="Full name" android:textColor="@color/vc_black" android:textStyle="bold" />
+        <EditText android:id="@+id/etFullName" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="8dp" android:background="@drawable/bg_input_field" android:hint="Full name" android:inputType="textPersonName" android:maxLength="80" android:paddingHorizontal="14dp" android:textColor="@color/vc_black" android:textColorHint="@color/vc_grey_text" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Username" android:textColor="@color/vc_black" android:textStyle="bold" />
+        <EditText android:id="@+id/etUsername" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="8dp" android:background="@drawable/bg_input_field" android:hint="username" android:inputType="textVisiblePassword" android:maxLength="30" android:paddingHorizontal="14dp" android:textColor="@color/vc_black" android:textColorHint="@color/vc_grey_text" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Location" android:textColor="@color/vc_black" android:textStyle="bold" />
+        <EditText android:id="@+id/etLocation" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="8dp" android:background="@drawable/bg_input_field" android:hint="Town, province" android:inputType="textCapWords" android:maxLength="80" android:paddingHorizontal="14dp" android:textColor="@color/vc_black" android:textColorHint="@color/vc_grey_text" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="Shop bio" android:textColor="@color/vc_black" android:textStyle="bold" />
+        <EditText android:id="@+id/etBio" android:layout_width="match_parent" android:layout_height="110dp" android:layout_marginTop="8dp" android:background="@drawable/bg_input_field" android:gravity="top|start" android:hint="Tell buyers about your shop" android:inputType="textCapSentences|textMultiLine" android:maxLength="160" android:maxLines="5" android:padding="14dp" android:textColor="@color/vc_black" android:textColorHint="@color/vc_grey_text" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Maximum 160 characters" android:textColor="@color/vc_grey_text" android:textSize="12sp" />
+
+        <Button android:id="@+id/btnSave" android:layout_width="match_parent" android:layout_height="54dp" android:layout_marginTop="24dp" android:layout_marginBottom="24dp" android:background="@drawable/bg_button_primary" android:text="Save profile" android:textAllCaps="false" android:textColor="@color/vc_white" />
+    </LinearLayout>
+</ScrollView>
